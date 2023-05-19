@@ -315,6 +315,13 @@ async function getRepeatMode(): Promise<RepeatMode> {
   return TrackPlayer.getRepeatMode();
 }
 
+/**
+ * Gets the repeat mode.
+ */
+async function resetWithoutKill(): Promise<void> {
+  return TrackPlayer.resetWithoutKill();
+}
+
 export default {
   // MARK: - General API
   setupPlayer,
@@ -356,4 +363,5 @@ export default {
   getPosition,
   getState,
   getRepeatMode,
+  resetWithoutKill
 };
