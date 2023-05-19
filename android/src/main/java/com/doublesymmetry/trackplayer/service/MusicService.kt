@@ -31,7 +31,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.flow
 import java.util.concurrent.TimeUnit
 import kotlin.system.exitProcess
-import android.util.Log
+// import android.util.Log
 
 @MainThread
 class MusicService : HeadlessJsTaskService() {
@@ -402,7 +402,7 @@ class MusicService : HeadlessJsTaskService() {
                         }
 
                         stopSelf()
-                        Log.d("MusicService stopped")
+                        // Log.d("MusicService stopped")
                         // exitProcess(0)
                     }
                 }
