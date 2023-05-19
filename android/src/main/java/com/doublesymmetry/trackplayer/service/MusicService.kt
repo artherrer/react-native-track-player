@@ -507,8 +507,8 @@ class MusicService : HeadlessJsTaskService() {
         if (::player.isInitialized) {
             player.destroy()
         }
-
         progressUpdateJob?.cancel()
+        exitProcess(0)
     }
 
     @MainThread
