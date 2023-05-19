@@ -39,7 +39,7 @@ class MusicService : HeadlessJsTaskService() {
     private val binder = MusicBinder()
     private val scope = MainScope()
     private var progressUpdateJob: Job? = null
-    private var isSwitchingStation = false
+    private var isSwitchingStation: Boolean = false
 
     /**
      * Use [appKilledPlaybackBehavior] instead.
