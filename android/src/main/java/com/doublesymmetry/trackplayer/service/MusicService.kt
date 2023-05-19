@@ -31,7 +31,6 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.flow
 import java.util.concurrent.TimeUnit
 import kotlin.system.exitProcess
-// import android.util.Log
 
 @MainThread
 class MusicService : HeadlessJsTaskService() {
@@ -250,7 +249,8 @@ class MusicService : HeadlessJsTaskService() {
     }
 
     @MainThread
-    fun stopPlayer() {
+    fun stopPlayer(isSwitching: Boolean) {
+        isSwitchingStation = isSwitching
         player.stop()
     }
 
